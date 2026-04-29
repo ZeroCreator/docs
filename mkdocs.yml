@@ -1,0 +1,36 @@
+site_name: Центральный справочник проектов
+site_description: Документация всех проектов организации
+site_author: Команда разработки
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - tables
+
+nav:
+  - Главная: index.md
+  - Проекты:
+    - ssk-scraper:
+      - Описание проекта: ssk-scraper/PROJECT_DESCRIPTION.md
+      - Настройка браузера: ssk-scraper/browser.md
+      - Контейнеры: ssk-scraper/CONTAINERS.md
+      - Локальное тестирование: ssk-scraper/LOCAL_TEST.md
+      - Миграция: ssk-scraper/migration_with_celery_to_temporal.md
+      - TrendAgent задачи: ssk-scraper/trendagent_tasks.txt

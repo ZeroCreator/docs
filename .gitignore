@@ -1,0 +1,64 @@
+# Виртуальное окружение
+venv/
+env/
+ENV/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# MkDocs сгенерированные файлы
+site/
+.cache/
+.mkdocs-cache/
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Файлы IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-*
+
+# Файлы ваших проектов, которые не должны попасть в Git (если есть чувствительные данные)
+*.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.crt
+secrets/
+credentials/
+
+# Большие бинарные файлы (если есть)
+*.db
+*.sqlite
+*.sqlite3
+*.pyc
+*.pyo
+
+# Ваши локальные файлы, которые могут быть в docs/ (исключаем .py, .txt, если не нужны)
+docs/**/*.py
+docs/**/*.txt
+docs/**/*.local
+docs/**/scripts/*.py
+docs/**/dotenv*
+
+# Исключаем конкретные файлы, которые вы не хотите публиковать
+docs/ssk-scraper/nash_dom_local.txt
+docs/ssk-scraper/new_model.txt
+docs/ssk-scraper/dotenv
+
+# Деплой на GitHub Pages (папка с собранным сайтом)
+gh-deploy/
